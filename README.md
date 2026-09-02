@@ -1,1 +1,1 @@
-# Yihong Liu — Academic Website
+# Yihong Liu's Academic Website
