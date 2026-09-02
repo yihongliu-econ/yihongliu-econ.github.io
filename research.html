@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Yihong Liu</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Yihong Liu</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="files/cv.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="portrait">
+        <img src="assets/profile.jpg" alt="Yihong Liu">
+      </div>
+      <h2>Yihong Liu</h2>
+      <p class="tagline">Ph.D. Candidate in Economics</p>
+      <div class="sidebar-links">
+        <p>📍 Santa Barbara, CA</p>
+        <p>🏛️ University of California, Santa Barbara</p>
+        <p>✉️ <a href="mailto:yihongliu@ucsb.edu">Email</a></p>
+        <p>📄 <a href="files/cv.pdf">Curriculum Vitae</a></p>
+      </div>
+    </aside>
+
+    <section class="content">
+      <h1>Research</h1>
+
+      <h2 class="section-title">Job Market Paper</h2>
+
+      <article class="paper featured">
+        <h3>Matched Triple Differences: A Framework for Valid Covariate Adjustment</h3>
+        <p class="paper-meta">Job Market Paper</p>
+        <div class="paper-links">
+        <a href="files/jmp.pdf" target="_blank">PDF</a>
+        <a href="files/abstract.pdf" target="_blank">Abstract</a>
+      </div>
+      </article>
+
+      <h2 class="section-title">Working Papers</h2>
+
+      <article class="paper">
+        <h3>Post-Matching Two-Way Fixed Effects Estimation</h3>
+        <p class="paper-meta">with Gonzalo Vazquez-Bare.</p>
+        <div class="paper-links">
+          <a href="#" target="_blank">PDF</a>
+          <a href="#" onclick="toggleAbstract('agg-abstract'); return false;">Abstract</a>
+        </div>
+        <div id="agg-abstract" class="abstract">
+          <p>
+            When estimating treatment effects with two-way fixed effects (2WFE) models, researchers 
+            often use matching as a pre-processing step when the parallel trends assumption is thought 
+            to hold conditionally on covariates. Specifically, in a first step, each treated unit is 
+            matched to one or more untreated units based on observed time-invariant covariates. In the 
+            second step, treatment effects are estimated with a 2WFE regression in the matched sample, 
+            reweighting the untreated units by the number of times they are matched. We formally analyze 
+            this common practice and highlight two problems. First, with variation in treatment timing, 
+            the post-matching 2WFE estimator that pools all treated cohorts has an asymptotic bias, even 
+            when the treatment effect is constant across units and over time. Second, failing to account 
+            for the variability introduced by the matching procedure yields invalid standard error estimators, 
+            which can be biased upwards or downwards depending on the data generating process. We characterize 
+            the joint asymptotic distribution of the vector of cohort means over time and their matched 
+            counterparts, and use our results to provide consistent, asymptotically normal estimators of 
+            treatment effects, event-study coefficients and other aggregate magnitudes, with valid standard 
+            errors that account for the matching step. We illustrate our results with simulations and with 
+            an empirical application.
+          </p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <h3> Estimating Resource Games with Nonlinear Dynamics</h3>
+        <p class="paper-meta">with Shuchen Tsao.</p>
+        <div class="paper-links">
+          <a href="#" target="_blank">PDF</a>
+          <a href="#" onclick="toggleAbstract('paper2-abstract'); return false;">Abstract</a>
+        </div>
+        <div id="paper2-abstract" class="abstract">
+          <p>Nonlinear equations of motion are central to many policy contexts, including resource management 
+            and public health, where dynamics such as fish reproduction and disease transmission are 
+            inherently nonlinear. Because policy insights in these settings fundamentally hinge on 
+            these nonlinearities, standard linear approximations are inadequate. Moreover, strategic 
+            interactions between jurisdictions compound the computational burden of estimating such models.
+            We develop a tractable Generalized Method of Moments (GMM) framework for dynamic games that accommodates
+            heterogeneous agents alongside fully nonlinear, interactive state dynamics. We provide sufficient 
+            conditions under which our approach is feasible and establish its consistency and asymptotic normality. 
+            Finally, we apply the framework to a multi-country fishery game in East Asia, quantifying strategic 
+            harvest responses to climate-driven shifts in ocean currents.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Yihong Liu</span></footer>
+
+  <script>
+    function toggleAbstract(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
