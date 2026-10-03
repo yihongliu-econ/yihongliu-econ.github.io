@@ -44,8 +44,28 @@
         <p class="paper-meta">Job Market Paper</p>
         <div class="paper-links">
         <a href="files/jmp.pdf" target="_blank">PDF</a>
-        <a href="files/abstract.pdf" target="_blank">Abstract</a>
-      </div>
+         <a href="#" onclick="toggleAbstract('agg-abstract'); return false;">Abstract</a>
+        </div>
+        <div id="agg-abstract" class="abstract">
+          <p>
+          Identification in triple-differences (DDD) designs is often justified by the conditional 
+          parallel gaps assumption, under which units with similar observed covariates are expected 
+          to exhibit similar deviations from parallel trends. In this setting, a common empirical practice 
+            is to add covariate trends or covariate levels to a three-way fixed effects (3WFE) regression. 
+            We formally study both specifications and show that, in general, neither consistently estimates 
+            the average treatment effect on the treated (ATT). Our diagnosis has two parts. First, we show 
+            that the OLS estimands of both specifications fail to satisfy the covariate balancing condition 
+            sufficient for them to equal the ATT. Second, we characterize the additional assumptions for 
+            each OLS estimand to equal the ATT. To address these limitations, we propose a 
+            matched triple-differences framework that accommodates a general class of matching procedures, 
+            including nearest-neighbor matching and kernel matching. Within this framework, 
+            we construct a class of consistent matching estimators, establish their asymptotic normality, 
+            and provide a consistent variance estimator that accounts for the variability introduced by the matching step. 
+            Our empirical application revisits \cite{Cai_2016_AEJ} and shows that the proposed matched triple-differences 
+            estimator can yield estimates and qualitative conclusions that differ from those of the 3WFE regression used 
+            in the original study.
+          </p>
+        </div>
       </article>
 
       <h2 class="section-title">Working Papers</h2>
