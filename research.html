@@ -37,10 +37,14 @@
     <section class="content">
       <h1>Research</h1>
 
+      <p>
+        <a href="files/research_statement.pdf" target="_blank">Research Statement</a>
+      </p>
+
       <h2 class="section-title">Job Market Paper</h2>
 
       <article class="paper featured">
-        <h3>Matched Triple Differences: A Framework for Covariate Adjustment</h3>
+        <h3>Matched Triple-Differences: A Framework for Covariate Adjustment</h3>
         <p class="paper-meta">Job Market Paper</p>
         <div class="paper-links">
         <a href="files/jmp.pdf" target="_blank">PDF</a>
@@ -49,7 +53,7 @@
         <div id="matched-triple-differences-abstract" class="abstract">
           <p>
          A common empirical strategy in triple-differences (DDD) is to include either covariate trends or covariate levels 
-            to a three-way fixed effects (3WFE) regression. This strategy is typically motivated by the conditional 
+            in a three-way fixed effects (3WFE) regression. This strategy is typically motivated by the conditional
             parallel gaps assumption which assumes that deviations from parallel trends are similar among units with 
             comparable observed covariates. We formally study both 3WFE specifications and show that, in general, 
             neither consistently estimates the average treatment effect on the treated (ATT). Our diagnosis has two 
@@ -82,13 +86,15 @@
             two-way fixed effects (2WFE) methods. Specifically, in a first step, each treated unit is matched to 
             one or more never-treated units based on observed pre-treatment covariates. In the second step, treatment effects 
             are estimated with a 2WFE regression in the matched sample, reweighting the never-treated units by the number 
-            of times they are matched. We formally analyze this common practice and highlight two problems. First, 
-            with variation in treatment timing, the post-matching 2WFE estimator that pools all treated cohorts has an 
-            asymptotic bias, even when the treatment effect is constant across units and over time. Second, failing to account 
-            for the variability introduced by the matching procedure yields invalid standard error estimators, which can be biased 
-            upwards or downwards depending on the data generating process. We characterize the joint asymptotic distribution of the 
-            vector of cohort means over time and their matched counterparts, and use our results to provide consistent, 
-            asymptotically normal bias-corrected matched DiD estimators of treatment effects, event-study coefficients 
+            of times they are matched. We formally analyze this common practice and highlight three problems. First,
+            with variation in treatment timing, the post-matching 2WFE estimator that pools all treated cohorts has an
+            asymptotic “pooling” bias, even when the treatment effect is constant across units and over time. Second, failing to account
+            for the variability introduced by the matching procedure yields invalid standard error estimators, which can be biased
+            upwards or downwards depending on the data generating process. Third, imperfect matches generate a matching bias
+            that can be first-order for inference, but the required bias correction to address it is commonly omitted when
+            using post-matching 2WFE estimators in empirical work. Thus, conventional <em>t</em>-statistics and confidence
+            intervals based on the uncorrected estimator may be invalid. We provide consistent,
+            asymptotically normal bias-corrected matched DiD estimators of treatment effects, event-study coefficients
             and other aggregate magnitudes, with consistent standard errors that account for the matching step. 
             We illustrate our results with simulations and with two empirical applications.
           </p>
@@ -117,6 +123,16 @@
             ecological values.
           </p>
         </div>
+      </article>
+
+      <h2 class="section-title">Work in Progress</h2>
+
+      <article class="paper">
+        <h3>Triple-Differences with a Continuous Treatment</h3>
+      </article>
+
+      <article class="paper">
+        <h3>Identification and Inference on Treatment Effects under Covariate-Adaptive Randomization and Sample Selection</h3>
       </article>
     </section>
   </main>
